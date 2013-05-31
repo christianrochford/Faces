@@ -233,7 +233,7 @@
     
 		    $('#container').masonry({
 		      itemSelector: '.item',
-		      columnWidth: 0,
+		      columnWidth: 235,
 		      isAnimated: true
 		    });
     
@@ -246,19 +246,21 @@
 			$('.item').hover(
 		
 				function(){
-					$(this).find('.overbox').fadeOut(500);
+					$(this).find('.overbox').stop(true, true).fadeOut(500);
 				},
 				function(){
-					$(this).find('.overbox').fadeIn(500);
+					$(this).find('.overbox').stop(true, true).fadeIn(500);
 				}
 			);
 
+
 			$('.textbox').hover(
+
 				function(){
-					$(this).find('.facetext').fadeIn(500);
+					$(this).find('.facetext').stop(true, true).fadeIn(500);
 				},
 				function(){
-					$(this).find('.facetext').fadeOut(500);
+					$(this).find('.facetext').stop(true, true).fadeOut(500);
 				}
 			);
 			
