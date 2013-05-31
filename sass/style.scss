@@ -24,16 +24,25 @@ header{
 
 ///////////////main content///////////////
 
-#container{
-	max-width: 940px;
-	min-width: 470px;
-	margin: 40px auto 5px auto;
+#container {
+  max-width: 940px;
+  min-width: 300px;
+  margin: 40px auto 5px auto;
+  overflow: hidden;
 }
-.item{
-	width: 235px;
-	height: 235px;
-	float: left;
+
+.item {
+  width: 25%;
+  height: auto;
+  max-height: 235px;
+  float: left;
+  position: relative;
+  line-height: 0;
 }
+img{
+    max-width: 100%;
+    height: auto;
+  }
 .overbox{
     background: $red;
     opacity: 0.8;
@@ -50,6 +59,7 @@ header{
 	 top: 0;
 	 left: 0;
 	 z-index: 10;
+	 line-height: 1em;
 	h5, p{
 		color: $white;
 		text-transform: uppercase;
@@ -81,11 +91,10 @@ header{
 ///////////////footer///////////////
 
 footer{
-	max-width: 100%;
-	margin: 0 auto;
-	height: 35px;
-	background: $black;
-	clear: both;
+max-width: 940px;
+  margin: 0 auto;
+  height: 35px;
+  background: black;
 	ul{
 		list-style-type: none;
 		margin: 0;

@@ -17,18 +17,28 @@ header h1 {
 /* line 27, ../sass/style.scss */
 #container {
   max-width: 940px;
-  min-width: 470px;
+  min-width: 300px;
   margin: 40px auto 5px auto;
+  overflow: hidden;
 }
 
-/* line 32, ../sass/style.scss */
+/* line 34, ../sass/style.scss */
 .item {
-  width: 235px;
-  height: 235px;
+  width: 25%;
+  height: auto;
+  max-height: 235px;
   float: left;
+  position: relative;
+  line-height: 0;
 }
 
-/* line 37, ../sass/style.scss */
+/* line 42, ../sass/style.scss */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 46, ../sass/style.scss */
 .overbox {
   background: #ff3402;
   opacity: 0.8;
@@ -39,7 +49,7 @@ header h1 {
   left: 0;
 }
 
-/* line 46, ../sass/style.scss */
+/* line 55, ../sass/style.scss */
 .textbox {
   height: 100%;
   width: 100%;
@@ -47,8 +57,9 @@ header h1 {
   top: 0;
   left: 0;
   z-index: 10;
+  line-height: 1em;
 }
-/* line 53, ../sass/style.scss */
+/* line 63, ../sass/style.scss */
 .textbox h5, .textbox p {
   color: white;
   text-transform: uppercase;
@@ -56,59 +67,58 @@ header h1 {
   margin: 0;
   padding: 10px 0 10px 20px;
 }
-/* line 60, ../sass/style.scss */
+/* line 70, ../sass/style.scss */
 .textbox h5 {
   font-style: italic;
   text-decoration: underline;
   margin-top: 16px;
 }
 
-/* line 66, ../sass/style.scss */
+/* line 76, ../sass/style.scss */
 .facetext {
   width: 200%;
   position: relative;
   display: none;
 }
 
-/* line 71, ../sass/style.scss */
+/* line 81, ../sass/style.scss */
 .left h5, .left p {
   top: 0;
   left: 100%;
 }
 
-/* line 75, ../sass/style.scss */
+/* line 85, ../sass/style.scss */
 .right h5, .right p {
   top: 0;
   right: 200%;
 }
 
-/* line 83, ../sass/style.scss */
+/* line 93, ../sass/style.scss */
 footer {
-  max-width: 100%;
+  max-width: 940px;
   margin: 0 auto;
   height: 35px;
   background: black;
-  clear: both;
 }
-/* line 89, ../sass/style.scss */
+/* line 98, ../sass/style.scss */
 footer ul {
   list-style-type: none;
   margin: 0;
   padding: 5px 10px 0 0;
   float: right;
 }
-/* line 94, ../sass/style.scss */
+/* line 103, ../sass/style.scss */
 footer ul li {
   float: left;
 }
-/* line 96, ../sass/style.scss */
+/* line 105, ../sass/style.scss */
 footer ul li a {
   display: block;
   width: 20px;
   height: 20px;
   margin-left: 10px;
 }
-/* line 101, ../sass/style.scss */
+/* line 110, ../sass/style.scss */
 footer ul li a img {
   width: 25px;
 }
