@@ -3,7 +3,7 @@
 
 $black: #000;
 $white: #fff;
-$red: #ff3402;
+$red: #ff3301;
 @import "ceaser-easing";
 
 ///////////////header///////////////////
@@ -29,12 +29,29 @@ header{
   min-width: 300px;
   margin: 40px auto 5px auto;
   overflow: hidden;
-}
-
+  line-height: 0;
 img{
     max-width: 100%;
     height: auto;
-  }
+	  }
+}
+.item {
+  width: 25%;
+  float: left;
+  position: relative;
+  line-height: 0;
+}
+
+.overbox {
+  background: $red;
+  opacity: 0.8;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 
 ///////////////footer///////////////
 

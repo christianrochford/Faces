@@ -20,40 +20,59 @@ header h1 {
   min-width: 300px;
   margin: 40px auto 5px auto;
   overflow: hidden;
+  line-height: 0;
 }
-
-/* line 34, ../sass/style.scss */
-img {
+/* line 33, ../sass/style.scss */
+#container img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 41, ../sass/style.scss */
+/* line 38, ../sass/style.scss */
+.item {
+  width: 25%;
+  float: left;
+  position: relative;
+  line-height: 0;
+}
+
+/* line 45, ../sass/style.scss */
+.overbox {
+  background: #ff3301;
+  opacity: 0.8;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* line 58, ../sass/style.scss */
 footer {
   max-width: 940px;
   margin: 0 auto;
   height: 35px;
   background: black;
 }
-/* line 46, ../sass/style.scss */
+/* line 63, ../sass/style.scss */
 footer ul {
   list-style-type: none;
   margin: 0;
   padding: 5px 10px 0 0;
   float: right;
 }
-/* line 51, ../sass/style.scss */
+/* line 68, ../sass/style.scss */
 footer ul li {
   float: left;
 }
-/* line 53, ../sass/style.scss */
+/* line 70, ../sass/style.scss */
 footer ul li a {
   display: block;
   width: 20px;
   height: 20px;
   margin-left: 10px;
 }
-/* line 58, ../sass/style.scss */
+/* line 75, ../sass/style.scss */
 footer ul li a img {
   width: 25px;
 }
