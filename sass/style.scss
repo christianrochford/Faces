@@ -52,6 +52,19 @@ img{
   left: 0;
 }
 
+///////////////modals///////////////
+
+.reveal-modal{
+	color: $white;
+	h1{
+		font-style: italic;
+		text-transform: uppercase;
+		text-decoration: underline;
+	}
+	p{
+		text-transform: uppercase;
+	}
+}
 
 ///////////////footer///////////////
 

@@ -47,32 +47,47 @@ header h1 {
   left: 0;
 }
 
-/* line 58, ../sass/style.scss */
+/* line 57, ../sass/style.scss */
+.reveal-modal {
+  color: white;
+}
+/* line 59, ../sass/style.scss */
+.reveal-modal h1 {
+  font-style: italic;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+/* line 64, ../sass/style.scss */
+.reveal-modal p {
+  text-transform: uppercase;
+}
+
+/* line 71, ../sass/style.scss */
 footer {
   max-width: 940px;
   margin: 0 auto;
   height: 35px;
   background: black;
 }
-/* line 63, ../sass/style.scss */
+/* line 76, ../sass/style.scss */
 footer ul {
   list-style-type: none;
   margin: 0;
   padding: 5px 10px 0 0;
   float: right;
 }
-/* line 68, ../sass/style.scss */
+/* line 81, ../sass/style.scss */
 footer ul li {
   float: left;
 }
-/* line 70, ../sass/style.scss */
+/* line 83, ../sass/style.scss */
 footer ul li a {
   display: block;
   width: 20px;
   height: 20px;
   margin-left: 10px;
 }
-/* line 75, ../sass/style.scss */
+/* line 88, ../sass/style.scss */
 footer ul li a img {
   width: 25px;
 }
