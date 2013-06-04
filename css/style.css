@@ -1,10 +1,62 @@
-/* line 21, ../sass/style.scss */
+@font-face {
+  font-family: 'museo_sans_300regular';
+  src: url("../fonts/MuseoSans_300-webfont.eot");
+  src: url("../fonts/MuseoSans_300-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSans_300-webfont.woff") format("woff"), url("../fonts/MuseoSans_300-webfont.ttf") format("truetype"), url("../fonts/MuseoSans_300-webfont.svg#museo_sans_300regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'museo_sans_500regular';
+  src: url("../fonts/MuseoSans_500-webfont.eot");
+  src: url("../fonts/MuseoSans_500-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSans_500-webfont.woff") format("woff"), url("../fonts/MuseoSans_500-webfont.ttf") format("truetype"), url("../fonts/MuseoSans_500-webfont.svg#museo_sans_500regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'museo_sans_700regular';
+  src: url("../fonts/MuseoSans_700-webfont.eot");
+  src: url("../fonts/MuseoSans_700-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSans_700-webfont.woff") format("woff"), url("../fonts/MuseoSans_700-webfont.ttf") format("truetype"), url("../fonts/MuseoSans_700-webfont.svg#museo_sans_700regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'museo_sans_900regular';
+  src: url("../fonts/MuseoSans_900-webfont.eot");
+  src: url("../fonts/MuseoSans_900-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSans_900-webfont.woff") format("woff"), url("../fonts/MuseoSans_900-webfont.ttf") format("truetype"), url("../fonts/MuseoSans_900-webfont.svg#museo_sans_900regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot");
+  src: url("../fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.svg#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 82, ../sass/style.scss */
+[data-icon]:before {
+  font-family: 'icomoon';
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 95, ../sass/style.scss */
 header {
   background: black;
   height: 40px;
   padding: 0;
 }
-/* line 25, ../sass/style.scss */
+/* line 99, ../sass/style.scss */
 header h1 {
   color: white;
   font-size: 31px;
@@ -14,7 +66,7 @@ header h1 {
   margin: 0;
 }
 
-/* line 37, ../sass/style.scss */
+/* line 111, ../sass/style.scss */
 #container {
   max-width: 940px;
   min-width: 300px;
@@ -22,13 +74,13 @@ header h1 {
   overflow: hidden;
   line-height: 0;
 }
-/* line 43, ../sass/style.scss */
+/* line 117, ../sass/style.scss */
 #container img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 48, ../sass/style.scss */
+/* line 122, ../sass/style.scss */
 .item {
   width: 25%;
   float: left;
@@ -36,13 +88,13 @@ header h1 {
   line-height: 0;
 }
 @media (max-width: 480px) {
-  /* line 48, ../sass/style.scss */
+  /* line 122, ../sass/style.scss */
   .item {
     width: 50%;
   }
 }
 
-/* line 56, ../sass/style.scss */
+/* line 130, ../sass/style.scss */
 .overbox {
   background: #ff3301;
   opacity: 0.8;
@@ -53,17 +105,74 @@ header h1 {
   left: 0;
 }
 
-/* line 68, ../sass/style.scss */
-.reveal-modal {
-  color: white;
+/* line 142, ../sass/style.scss */
+.reveal-modal-bg {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 100;
+  display: none;
+  top: 0;
+  left: 0;
 }
-/* line 70, ../sass/style.scss */
+
+/* line 154, ../sass/style.scss */
+.reveal-modal {
+  visibility: hidden;
+  top: 100px;
+  left: 30%;
+  width: 40%;
+  position: absolute;
+  z-index: 101;
+  padding: 30px 40px 34px;
+  color: white;
+  font-family: "museo_sans_700regular",Helvetica,Arial,sans-serif;
+}
+@media (max-width: 480px) {
+  /* line 154, ../sass/style.scss */
+  .reveal-modal {
+    top: 50px;
+  }
+}
+@media (max-width: 1024px) {
+  /* line 154, ../sass/style.scss */
+  .reveal-modal {
+    left: 15%;
+  }
+}
+@media (max-width: 685px) {
+  /* line 154, ../sass/style.scss */
+  .reveal-modal {
+    left: 10%;
+  }
+}
+@media (max-width: 480px) {
+  /* line 154, ../sass/style.scss */
+  .reveal-modal {
+    left: 5%;
+  }
+}
+@media (max-width: 1024px) {
+  /* line 154, ../sass/style.scss */
+  .reveal-modal {
+    width: 60%;
+  }
+}
+@media (max-width: 685px) {
+  /* line 154, ../sass/style.scss */
+  .reveal-modal {
+    width: 70%;
+  }
+}
+/* line 170, ../sass/style.scss */
 .reveal-modal h1 {
   font-style: italic;
   text-transform: uppercase;
   text-decoration: underline;
 }
-/* line 75, ../sass/style.scss */
+/* line 175, ../sass/style.scss */
 .reveal-modal p {
   font-size: 0.7em;
   line-height: 1.2em;
@@ -71,32 +180,43 @@ header h1 {
   letter-spacing: 1px;
 }
 
-/* line 85, ../sass/style.scss */
+/* line 183, ../sass/style.scss */
+.reveal-modal .close-reveal-modal {
+  font-size: 60px;
+  line-height: 2em;
+  position: absolute;
+  top: -1em;
+  right: 0.5em;
+  color: #fff;
+  text-shadow: 0 -1px 1px rbga(0, 0, 0, 0.6);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* line 197, ../sass/style.scss */
 footer {
   max-width: 940px;
   margin: 0 auto;
   height: 35px;
   background: black;
 }
-/* line 90, ../sass/style.scss */
+/* line 202, ../sass/style.scss */
 footer ul {
   list-style-type: none;
   margin: 0;
   padding: 5px 10px 0 0;
   float: right;
 }
-/* line 95, ../sass/style.scss */
+/* line 207, ../sass/style.scss */
 footer ul li {
   float: left;
 }
-/* line 97, ../sass/style.scss */
-footer ul li a {
+/* line 210, ../sass/style.scss */
+footer ul a {
   display: block;
-  width: 20px;
-  height: 20px;
-  margin-left: 10px;
-}
-/* line 102, ../sass/style.scss */
-footer ul li a img {
   width: 25px;
+  text-align: center;
+  color: #7d7d7d;
+  text-decoration: none;
+  padding: 4px 2px;
 }
