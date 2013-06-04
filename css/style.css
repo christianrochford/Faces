@@ -1,10 +1,10 @@
-/* line 11, ../sass/style.scss */
+/* line 21, ../sass/style.scss */
 header {
   background: black;
   height: 40px;
   padding: 0;
 }
-/* line 15, ../sass/style.scss */
+/* line 25, ../sass/style.scss */
 header h1 {
   color: white;
   font-size: 31px;
@@ -14,7 +14,7 @@ header h1 {
   margin: 0;
 }
 
-/* line 27, ../sass/style.scss */
+/* line 37, ../sass/style.scss */
 #container {
   max-width: 940px;
   min-width: 300px;
@@ -22,21 +22,27 @@ header h1 {
   overflow: hidden;
   line-height: 0;
 }
-/* line 33, ../sass/style.scss */
+/* line 43, ../sass/style.scss */
 #container img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 38, ../sass/style.scss */
+/* line 48, ../sass/style.scss */
 .item {
   width: 25%;
   float: left;
   position: relative;
   line-height: 0;
 }
+@media (max-width: 480px) {
+  /* line 48, ../sass/style.scss */
+  .item {
+    width: 50%;
+  }
+}
 
-/* line 45, ../sass/style.scss */
+/* line 56, ../sass/style.scss */
 .overbox {
   background: #ff3301;
   opacity: 0.8;
@@ -47,47 +53,50 @@ header h1 {
   left: 0;
 }
 
-/* line 57, ../sass/style.scss */
+/* line 68, ../sass/style.scss */
 .reveal-modal {
   color: white;
 }
-/* line 59, ../sass/style.scss */
+/* line 70, ../sass/style.scss */
 .reveal-modal h1 {
   font-style: italic;
   text-transform: uppercase;
   text-decoration: underline;
 }
-/* line 64, ../sass/style.scss */
+/* line 75, ../sass/style.scss */
 .reveal-modal p {
+  font-size: 0.7em;
+  line-height: 1.2em;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-/* line 71, ../sass/style.scss */
+/* line 85, ../sass/style.scss */
 footer {
   max-width: 940px;
   margin: 0 auto;
   height: 35px;
   background: black;
 }
-/* line 76, ../sass/style.scss */
+/* line 90, ../sass/style.scss */
 footer ul {
   list-style-type: none;
   margin: 0;
   padding: 5px 10px 0 0;
   float: right;
 }
-/* line 81, ../sass/style.scss */
+/* line 95, ../sass/style.scss */
 footer ul li {
   float: left;
 }
-/* line 83, ../sass/style.scss */
+/* line 97, ../sass/style.scss */
 footer ul li a {
   display: block;
   width: 20px;
   height: 20px;
   margin-left: 10px;
 }
-/* line 88, ../sass/style.scss */
+/* line 102, ../sass/style.scss */
 footer ul li a img {
   width: 25px;
 }
