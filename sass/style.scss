@@ -7,10 +7,13 @@ $white: #fff;
 $red: #ff3301;
 
 @mixin breakpoint($point) {
-  @if $point == gross {
+  @if $point == ganzgross {
     @media (max-width: 1024px) { @content; }
   }
-  @else if $point == mittelgross {
+  @else if $point == gross {
+    @media (max-width: 900px) { @content; }
+  }
+  @else if $point == mittelganzgross {
     @media (max-width: 685px) { @content; }
   }
   @else if $point == klein {
@@ -94,6 +97,7 @@ $red: #ff3301;
 
 body{
 	color: white;
+	font-family: "museo_sans_700regular",Helvetica,Arial,sans-serif;
 }
 h1{
 	font-style: italic;
@@ -158,6 +162,8 @@ img{
 ///////////////desktop text///////////////
 
 .textbox {
+  display: block;
+  @include breakpoint(gross) { display: none }
   height: 100%;
   width: 100%;
   position: absolute;
@@ -172,7 +178,7 @@ img{
 }
 
 .facetext {
-  width: 200%;
+  width: 190%;
   position: relative;
   display: none;
   box-sizing: border-box;
@@ -191,52 +197,50 @@ img{
 
 ///////////////mobile modals///////////////
 
-	.reveal-modal-bg { 
-		position: fixed; 
-		height: 100%;
-		width: 100%;
-		background: #000;
-		background: rgba(0,0,0,.8);
-		z-index: 100;
-		display: none;
-		top: 0;
-		left: 0; 
-		}
-	
-	.reveal-modal {
-		visibility: hidden;
-		top: 100px; 
-		@include breakpoint(klein) { top: 50px; }
-		left: 30%;
-		@include breakpoint(gross) { left: 15%; }
-		@include breakpoint(mittelgross) { left: 10%; }
-		@include breakpoint(klein) { left: 5%; }
-		width: 40%;
-		@include breakpoint(gross) { width: 60%; }
-		@include breakpoint(mittelgross) { width: 70%; }
-		position: absolute;
-		z-index: 101;
-		padding: 30px 40px 34px;
-		color: $white;
-		font-family: "museo_sans_700regular",Helvetica,Arial,sans-serif;
+.reveal-modal-bg { 
+	position: fixed; 
+	height: 100%;
+	width: 100%;
+	background: #000;
+	background: rgba(0,0,0,.8);
+	z-index: 100;
+	display: none;
+	top: 0;
+	left: 0; 
 	}
 	
-	.reveal-modal .close-reveal-modal {
-		font-size: 60px;
-		line-height: 2em;
-		position: absolute;
-		top: -1em;
-		right: 0.5em;
-		color: #fff;
-		text-shadow: 0 -1px 1px rbga(0,0,0,.6);
-		font-weight: bold;
-		cursor: pointer;
-		} 
+.reveal-modal {
+	visibility: hidden;
+	top: 100px; 
+	@include breakpoint(klein) { top: 50px; }
+	left: 30%;
+	@include breakpoint(ganzgross) { left: 15%; }
+	@include breakpoint(mittelganzgross) { left: 10%; }
+	@include breakpoint(klein) { left: 5%; }
+	width: 40%;
+	@include breakpoint(ganzgross) { width: 60%; }
+	@include breakpoint(mittelganzgross) { width: 70%; }
+	position: absolute;
+	z-index: 101;
+	padding: 30px 40px 34px;
+    }
+	
+.reveal-modal .close-reveal-modal {
+	font-size: 60px;
+	line-height: 2em;
+	position: absolute;
+	top: -1em;
+	right: 0.5em;
+	color: #fff;
+	text-shadow: 0 -1px 1px rbga(0,0,0,.6);
+	font-weight: bold;
+	cursor: pointer;
+	} 
 
 ///////////////footer///////////////
 
 footer{
-max-width: 940px;
+  max-width: 940px;
   margin: 0 auto;
   height: 35px;
   background: black;
