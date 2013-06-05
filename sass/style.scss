@@ -148,6 +148,9 @@ img{
   position: relative;
   line-height: 0;
 }
+.item.empty2, .item.empty3{
+	 @include breakpoint(klein) { display: none; }
+}
 
 .overbox {
   background: $red;
