@@ -1,0 +1,61 @@
+/*	--------------------------------------------------
+	Reveal Modals
+	-------------------------------------------------- */
+		
+	.reveal-modal-bg { 
+		position: fixed; 
+		height: 100%;
+		width: 100%;
+		background: #000;
+		background: rgba(0,0,0,.8);
+		z-index: 100;
+		display: none;
+		top: 0;
+		left: 0; 
+		}
+	
+	.reveal-modal {
+		visibility: hidden;
+		top: 100px; 
+		left: 30%;
+		width: 40%;
+		position: absolute;
+		z-index: 101;
+		padding: 30px 40px 34px;
+		}
+	
+	.reveal-modal .close-reveal-modal {
+		font-size: 22px;
+		line-height: 2em;
+		position: absolute;
+		top: 1em;
+		right: 1em;
+		color: #fff;
+		text-shadow: 0 -1px 1px rbga(0,0,0,.6);
+		font-weight: bold;
+		cursor: pointer;
+		} 
+
+/*	--------------------------------------------------
+	Media Queries
+	-------------------------------------------------- */
+
+	@media only screen and (max-width: 1024px){
+			.reveal-modal { 
+			left: 15%;
+			width: 60%;
+		}
+	}
+		@media only screen and (max-width: 685px){
+			.reveal-modal { 
+			left: 10%;
+			width: 70%;
+		}
+	}
+	@media only screen and (max-width: 480px){
+			.reveal-modal { 
+			top: 50px; 
+			left: 5%;
+			width: 70%;
+		}
+	}

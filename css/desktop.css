@@ -1,0 +1,243 @@
+/* line 11, ../sass/style.scss */
+header {
+  background: black;
+  height: 40px;
+  padding: 0;
+}
+/* line 15, ../sass/style.scss */
+header h1 {
+  color: white;
+  font-size: 31px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* line 27, ../sass/style.scss */
+#container {
+  max-width: 940px;
+  min-width: 300px;
+  margin: 40px auto 5px auto;
+  overflow: hidden;
+}
+
+/* line 34, ../sass/style.scss */
+.item {
+  width: 25%;
+  height: auto;
+  max-height: 235px;
+  float: left;
+  position: relative;
+  line-height: 0;
+}
+
+/* line 42, ../sass/style.scss */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 46, ../sass/style.scss */
+.overbox {
+  background: #ff3402;
+  opacity: 0.8;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* line 55, ../sass/style.scss */
+.textbox {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  line-height: 1.2em;
+}
+/* line 63, ../sass/style.scss */
+.textbox h3, .textbox p {
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-sizing: border-box;
+}
+/* line 69, ../sass/style.scss */
+.textbox h3 {
+  font-style: italic;
+  text-decoration: underline;
+  margin-top: 16px;
+}
+
+/* line 75, ../sass/style.scss */
+.facetext {
+  width: 190%;
+  position: relative;
+  display: none;
+  box-sizing: border-box;
+  padding: 10px 20px;
+}
+
+/* line 82, ../sass/style.scss */
+.left h3, .left p {
+  top: 0;
+  left: 100%;
+}
+
+/* line 86, ../sass/style.scss */
+.right h3, .right p {
+  top: 0;
+  right: 200%;
+}
+
+/* line 94, ../sass/style.scss */
+footer {
+  max-width: 940px;
+  margin: 0 auto;
+  height: 35px;
+  background: black;
+}
+/* line 99, ../sass/style.scss */
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 5px 10px 0 0;
+  float: right;
+}
+/* line 104, ../sass/style.scss */
+footer ul li {
+  float: left;
+}
+/* line 106, ../sass/style.scss */
+footer ul li a {
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+/* line 111, ../sass/style.scss */
+footer ul li a img {
+  width: 25px;
+}
+
+@media only screen and (max-width: 320px) {
+  /* line 122, ../sass/style.scss */
+  .facetext {
+    width: 380%;
+    padding: 10px;
+  }
+
+  /* line 126, ../sass/style.scss */
+  .left h3, .left p {
+    top: 100%;
+    left: 0;
+  }
+
+  /* line 130, ../sass/style.scss */
+  .right h3, .right p {
+    top: 100%;
+  }
+
+  /* line 134, ../sass/style.scss */
+  .face2 .left h3, .face2 .left p, .face6 .left h3, .face6 .left p, .face18 .left h3, .face18 .left p, .face22 .left h3, .face22 .left p {
+    left: -100%;
+  }
+
+  /* line 139, ../sass/style.scss */
+  .face9 .facetext {
+    width: 260%;
+  }
+  /* line 142, ../sass/style.scss */
+  .face9 .left h3, .face9 .left p {
+    top: -200%;
+    left: 100%;
+  }
+
+  /* line 148, ../sass/style.scss */
+  .face10 .left h3 {
+    top: 0;
+    left: 100%;
+  }
+  /* line 152, ../sass/style.scss */
+  .face10 .left p {
+    top: 0;
+    left: -100%;
+  }
+
+  /* line 158, ../sass/style.scss */
+  .face13 .facetext {
+    width: 260%;
+  }
+  /* line 161, ../sass/style.scss */
+  .face13 .left h3, .face13 .left p {
+    top: -300%;
+    left: 100%;
+  }
+
+  /* line 167, ../sass/style.scss */
+  .face14 .left h3 {
+    top: 0;
+    left: 100%;
+  }
+  /* line 171, ../sass/style.scss */
+  .face14 .left p {
+    top: -400%;
+    left: -100%;
+  }
+
+  /* line 177, ../sass/style.scss */
+  .face4 .right h3, .face4 .right p, .face8 .right h3, .face8 .right p, .face20 .right h3, .face20 .right p, .face24 .right h3, .face24 .right p {
+    right: 300%;
+  }
+
+  /* line 182, ../sass/style.scss */
+  .face11 .right h3 {
+    top: 0;
+    left: -200%;
+  }
+  /* line 186, ../sass/style.scss */
+  .face11 .right p {
+    top: 0;
+    left: -200%;
+  }
+
+  /* line 192, ../sass/style.scss */
+  .face12 .facetext {
+    width: 260%;
+  }
+  /* line 195, ../sass/style.scss */
+  .face12 .right h3, .face12 .right p {
+    top: -200%;
+    right: 300%;
+  }
+
+  /* line 201, ../sass/style.scss */
+  .face15 .right h3 {
+    top: 0;
+    left: -200%;
+  }
+  /* line 205, ../sass/style.scss */
+  .face15 .right p {
+    top: -400%;
+    left: -200%;
+  }
+
+  /* line 211, ../sass/style.scss */
+  .face16 .facetext {
+    width: 260%;
+  }
+  /* line 214, ../sass/style.scss */
+  .face16 .right h3, .face16 .right p {
+    top: -300%;
+    right: 300%;
+  }
+
+  /* line 220, ../sass/style.scss */
+  .face17 .left h3, .face17 .left p, .face17 .right h3, .face17 .right p, .face18 .left h3, .face18 .left p, .face18 .right h3, .face18 .right p, .face19 .left h3, .face19 .left p, .face19 .right h3, .face19 .right p, .face20 .left h3, .face20 .left p, .face20 .right h3, .face20 .right p, .face21 .left h3, .face21 .left p, .face21 .right h3, .face21 .right p, .face22 .left h3, .face22 .left p, .face22 .right h3, .face22 .right p, .face23 .left h3, .face23 .left p, .face23 .right h3, .face23 .right p, .face24 .left h3, .face24 .left p, .face24 .right h3, .face24 .right p {
+    top: -400%;
+  }
+}

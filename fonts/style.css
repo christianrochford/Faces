@@ -1,0 +1,150 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot');
+	src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon.woff') format('woff'),
+		url('../fonts/icomoon.ttf') format('truetype'),
+		url('../fonts/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'icomoon';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"] {
+*/
+.icon-twitter, .icon-plus, .icon-play, .icon-pinterest, .icon-loupe, .icon-link, .icon-heart, .icon-googleplus, .icon-gift-vouchers, .icon-facebook, .icon-email, .icon-circle-phone, .icon-circle-googleplus, .icon-circle-facebook, .icon-circle-email, .icon-circle-down, .icon-circle-at, .icon-camera, .icon-arr-right, .icon-arr-left, .icon-circle-twitter, .icon-circle-play, .icon-star, .icon-arr-down-simple, .icon-arr-left-simple, .icon-arr-right-simple, .icon-arr-up-simple, .icon-untitled, .icon-arr-down, .icon-arr-up, .icon-horizontal-lines, .icon-circle-cursor, .icon-circle-play-alt, .icon-circle-link, .icon-alert, .icon-share, .icon-cross {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-twitter:before {
+	content: "\e001";
+}
+.icon-plus:before {
+	content: "\e008";
+}
+.icon-play:before {
+	content: "\e009";
+}
+.icon-pinterest:before {
+	content: "\e00a";
+}
+.icon-loupe:before {
+	content: "\e00e";
+}
+.icon-link:before {
+	content: "\e00f";
+}
+.icon-heart:before {
+	content: "\e010";
+}
+.icon-googleplus:before {
+	content: "\e012";
+}
+.icon-gift-vouchers:before {
+	content: "\e013";
+}
+.icon-facebook:before {
+	content: "\e014";
+}
+.icon-email:before {
+	content: "\e015";
+}
+.icon-circle-phone:before {
+	content: "\e01a";
+}
+.icon-circle-googleplus:before {
+	content: "\e01c";
+}
+.icon-circle-facebook:before {
+	content: "\e01d";
+}
+.icon-circle-email:before {
+	content: "\e01e";
+}
+.icon-circle-down:before {
+	content: "\e01f";
+}
+.icon-circle-at:before {
+	content: "\e020";
+}
+.icon-camera:before {
+	content: "\e022";
+}
+.icon-arr-right:before {
+	content: "\e027";
+}
+.icon-arr-left:before {
+	content: "\e028";
+}
+.icon-circle-twitter:before {
+	content: "\e02b";
+}
+.icon-circle-play:before {
+	content: "\e02c";
+}
+.icon-star:before {
+	content: "\e02d";
+}
+.icon-arr-down-simple:before {
+	content: "\e02e";
+}
+.icon-arr-left-simple:before {
+	content: "\e02f";
+}
+.icon-arr-right-simple:before {
+	content: "\e030";
+}
+.icon-arr-up-simple:before {
+	content: "\e031";
+}
+.icon-untitled:before {
+	content: "\e032";
+}
+.icon-arr-down:before {
+	content: "\e034";
+}
+.icon-arr-up:before {
+	content: "\e035";
+}
+.icon-horizontal-lines:before {
+	content: "\e037";
+}
+.icon-circle-cursor:before {
+	content: "\e03d";
+}
+.icon-circle-play-alt:before {
+	content: "\e018";
+}
+.icon-circle-link:before {
+	content: "\e01b";
+}
+.icon-alert:before {
+	content: "\e03f";
+}
+.icon-share:before {
+	content: "\e007";
+}
+.icon-cross:before {
+	content: "\e017";
+}
