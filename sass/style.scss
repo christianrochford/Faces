@@ -90,6 +90,23 @@ $red: #ff3301;
 	-webkit-font-smoothing: antialiased;
 }
 
+///////////////base///////////////////
+
+body{
+	color: white;
+}
+h1{
+	font-style: italic;
+	text-transform: uppercase;
+	text-decoration: underline;
+}
+p{
+	font-size: 1em;
+	line-height: 1.2em;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
 ///////////////header///////////////////
 
 header{
@@ -100,8 +117,9 @@ header{
 		color: $white;
 		font-size: 31px;
 		font-family: Arial, Helvetica, sans-serif;
+		font-style: normal;
+		text-decoration: none;
 		text-align: center;
-		text-transform: uppercase;
 		margin: 0;
 	}
 }
@@ -149,17 +167,8 @@ img{
   line-height: 1.2em;
 }
 
-.textbox h3, .textbox p {
-  color: white;
-  font-weight: bold;
-  text-transform: uppercase;
-  box-sizing: border-box;
-}
-
-.textbox h3 {
-  font-style: italic;
-  text-decoration: underline;
-  margin-top: 16px;
+.textbox h1 {
+  margin: 16px 0;
 }
 
 .facetext {
@@ -167,15 +176,15 @@ img{
   position: relative;
   display: none;
   box-sizing: border-box;
-  padding: 10px 20px;
+  padding: 10px 20px 0;
 }
 
-.left h3, .left p {
+.left h1, .left p {
   top: 0;
   left: 100%;
 }
 
-.right h3, .right p {
+.right h1, .right p {
   top: 0;
   right: 200%;
 }
@@ -210,17 +219,6 @@ img{
 		padding: 30px 40px 34px;
 		color: $white;
 		font-family: "museo_sans_700regular",Helvetica,Arial,sans-serif;
-		h1{
-			font-style: italic;
-			text-transform: uppercase;
-			text-decoration: underline;
-		}
-		p{
-			font-size: 0.7em;
-			line-height: 1.2em;
-			text-transform: uppercase;
-			letter-spacing: 1px;
-		}
 	}
 	
 	.reveal-modal .close-reveal-modal {
