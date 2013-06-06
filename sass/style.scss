@@ -13,7 +13,7 @@ $red: #ff3301;
   @else if $point == gross {
     @media (max-width: 900px) { @content; }
   }
-  @else if $point == mittelganzgross {
+  @else if $point == mittelgross {
     @media (max-width: 685px) { @content; }
   }
   @else if $point == klein {
@@ -220,22 +220,25 @@ img{
 	@include breakpoint(klein) { top: 50px; }
 	left: 30%;
 	@include breakpoint(ganzgross) { left: 15%; }
-	@include breakpoint(mittelganzgross) { left: 10%; }
-	@include breakpoint(klein) { left: 5%; }
+	@include breakpoint(mittelgross) { left: 10%; }
+	@include breakpoint(klein) { left: 0; }
 	width: 40%;
 	@include breakpoint(ganzgross) { width: 60%; }
-	@include breakpoint(mittelganzgross) { width: 70%; }
+	@include breakpoint(mittelgross) { width: 70%; }
+	@include breakpoint(klein) { width: 80%; }
 	position: absolute;
 	z-index: 101;
 	padding: 30px 40px 34px;
+	@include breakpoint(klein) { padding: 10%; }
     }
 	
 .reveal-modal .close-reveal-modal {
 	font-size: 60px;
 	line-height: 2em;
 	position: absolute;
-	top: 0;
+	top: -1.2em;
 	right: 0;
+	@include breakpoint(klein) { right: 0.5em; }
 	color: #fff;
 	text-shadow: 0 -1px 1px rbga(0,0,0,.6);
 	font-weight: bold;
