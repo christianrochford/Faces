@@ -49,18 +49,13 @@ html[xmlns] .slides {display: block;}
 
 /* Direction Nav */
 .flex-direction-nav {*height: 0;}
-.flex-direction-nav a {width: 31px; height: 87px; margin: -20px 0 0; display: block; background: url(../img/bg_direction_arrows.png) no-repeat 0 0; position: absolute; top: 50%; z-index: 10; cursor: pointer; text-indent: -9999px; opacity: 0; -webkit-transition: all .3s ease;}
-
-
-
+.flex-direction-nav a {width: 31px; height: 87px; margin: -20px 0 0; display: block; background: url(../img/bg_direction_arrows.png) no-repeat 0 0; position: absolute; top: 50%; z-index: 10; cursor: pointer; text-indent: -9999px; -webkit-transition: all .3s ease;}
 .flex-direction-nav .flex-next {background-position: 100% 0; right: -25%; }
 .flex-direction-nav .flex-prev {left: -27%;}
 .flexslider:hover .flex-next {opacity: 0.8;}
 .flexslider:hover .flex-prev {opacity: 0.8;}
 .flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {opacity: 1;}
 .flex-direction-nav .flex-disabled {opacity: .3!important; filter:alpha(opacity=30); cursor: default;}
-
-
 
 
 /* Control Nav */
