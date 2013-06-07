@@ -233,15 +233,17 @@ img{
     }
 	
 .reveal-modal .close-reveal-modal {
+    font-family: 'museo_sans_300regular';
 	font-size: 60px;
 	line-height: 2em;
 	position: absolute;
-	top: -1.2em;
-	right: 0;
-	@include breakpoint(klein) { right: 0.5em; }
+	top: -2em;
+    @include breakpoint(klein) { top: -1.5em; }
+	left: 115%;
+	@include breakpoint(mittelgross) { left: 100%; }
+    @include breakpoint(klein) { left: 90%; }
 	color: #fff;
 	text-shadow: 0 -1px 1px rbga(0,0,0,.6);
-	font-weight: bold;
 	cursor: pointer;
 	} 
 

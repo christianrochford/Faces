@@ -254,42 +254,54 @@ header h1 {
 
 /* line 235, ../sass/style.scss */
 .reveal-modal .close-reveal-modal {
+  font-family: 'museo_sans_300regular';
   font-size: 60px;
   line-height: 2em;
   position: absolute;
-  top: -1.2em;
-  right: 0;
+  top: -2em;
+  left: 115%;
   color: #fff;
   text-shadow: 0 -1px 1px rbga(0, 0, 0, 0.6);
-  font-weight: bold;
   cursor: pointer;
 }
 @media (max-width: 480px) {
   /* line 235, ../sass/style.scss */
   .reveal-modal .close-reveal-modal {
-    right: 0.5em;
+    top: -1.5em;
+  }
+}
+@media (max-width: 685px) {
+  /* line 235, ../sass/style.scss */
+  .reveal-modal .close-reveal-modal {
+    left: 100%;
+  }
+}
+@media (max-width: 480px) {
+  /* line 235, ../sass/style.scss */
+  .reveal-modal .close-reveal-modal {
+    left: 90%;
   }
 }
 
-/* line 250, ../sass/style.scss */
+/* line 252, ../sass/style.scss */
 footer {
   max-width: 940px;
   margin: 0 auto;
   height: 35px;
   background: black;
 }
-/* line 255, ../sass/style.scss */
+/* line 257, ../sass/style.scss */
 footer ul {
   list-style-type: none;
   margin: 0;
   padding: 5px 10px 0 0;
   float: right;
 }
-/* line 260, ../sass/style.scss */
+/* line 262, ../sass/style.scss */
 footer ul li {
   float: left;
 }
-/* line 263, ../sass/style.scss */
+/* line 265, ../sass/style.scss */
 footer ul a {
   display: block;
   width: 25px;
