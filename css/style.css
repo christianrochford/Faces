@@ -195,7 +195,7 @@ header h1 {
 
 /* line 217, ../sass/style.scss */
 .reveal-modal {
-  visibility: hidden;
+  display: none;
   top: 100px;
   left: 30%;
   width: 40%;

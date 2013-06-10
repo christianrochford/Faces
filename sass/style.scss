@@ -215,7 +215,7 @@ img{
 	}
 	
 .reveal-modal {
-	visibility: hidden;
+	display: none;
 	top: 100px; 
 	@include breakpoint(klein) { top: 50px; }
 	left: 30%;
