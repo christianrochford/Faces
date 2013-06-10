@@ -215,33 +215,41 @@ img{
 	}
 	
 .reveal-modal {
+	color: $white;
+	font-family: "museo_sans_700regular",Helvetica,Arial,sans-serif;
+	text-align: left;
 	visibility: hidden;
-	top: 100px; 
-	@include breakpoint(klein) { top: 50px; }
-	left: 30%;
-	@include breakpoint(ganzgross) { left: 15%; }
-	@include breakpoint(mittelgross) { left: 10%; }
-	@include breakpoint(klein) { left: 0; }
-	width: 40%;
-	@include breakpoint(ganzgross) { width: 60%; }
-	@include breakpoint(mittelgross) { width: 70%; }
-	@include breakpoint(klein) { width: 80%; }
+	width: 100%;
 	position: absolute;
+	top: 0; 
+	left: 0;
 	z-index: 101;
 	padding: 30px 40px 34px;
 	@include breakpoint(klein) { padding: 10%; }
-    }
+	h1{
+		font-style: italic;
+		text-transform: uppercase;
+		text-decoration: underline;
+		margin: 100px 30% 0;
+		@include breakpoint(klein) { margin: 100px 10% 0; }
+	}
+	p{
+		font-size: 1em;
+		line-height: 1.2em;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		margin: 50px 30%;
+		@include breakpoint(klein) { margin: 100px 10% 0; }
+	}
+}
 	
 .reveal-modal .close-reveal-modal {
     font-family: 'museo_sans_300regular';
 	font-size: 60px;
 	line-height: 2em;
 	position: absolute;
-	top: -2em;
-    @include breakpoint(klein) { top: -1.5em; }
-	left: 115%;
-	@include breakpoint(mittelgross) { left: 100%; }
-    @include breakpoint(klein) { left: 90%; }
+	top: 0em;
+	right: 2em;
 	color: #fff;
 	text-shadow: 0 -1px 1px rbga(0,0,0,.6);
 	cursor: pointer;
