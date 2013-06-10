@@ -224,14 +224,12 @@ img{
 	top: 0; 
 	left: 0;
 	z-index: 101;
-	padding: 30px 40px 34px;
-	@include breakpoint(klein) { padding: 10%; }
 	h1{
 		font-style: italic;
 		text-transform: uppercase;
 		text-decoration: underline;
 		margin: 100px 30% 0;
-		@include breakpoint(klein) { margin: 50px 15% 0 5%; }
+		@include breakpoint(klein) { margin: 50px 0 10%; }
 	}
 	p{
 		font-size: 1em;
@@ -239,7 +237,7 @@ img{
 		text-transform: uppercase;
 		letter-spacing: 1px;
 		margin: 50px 30%;
-		@include breakpoint(klein) { margin: 50px 15% 0 5%; }
+		@include breakpoint(klein) { margin: 50px 0 10%; }
 	}
 }
 	
