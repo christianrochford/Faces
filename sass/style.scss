@@ -231,7 +231,7 @@ img{
 		text-transform: uppercase;
 		text-decoration: underline;
 		margin: 100px 30% 0;
-		@include breakpoint(klein) { margin: 100px 10% 0; }
+		@include breakpoint(klein) { margin: 50px 15% 0 5%; }
 	}
 	p{
 		font-size: 1em;
@@ -239,7 +239,7 @@ img{
 		text-transform: uppercase;
 		letter-spacing: 1px;
 		margin: 50px 30%;
-		@include breakpoint(klein) { margin: 100px 10% 0; }
+		@include breakpoint(klein) { margin: 50px 15% 0 5%; }
 	}
 }
 	
