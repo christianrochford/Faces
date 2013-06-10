@@ -361,7 +361,7 @@
 					$(this).find('.overbox').stop(true, true).fadeOut(500);
 				},
 				function(){
-					$(this).find('.overbox').stop(true, true).fadeIn(500);
+					$(this).find('.overbox').stop(true, true).css('filter', 'alpha(opacity=80)').fadeIn(500);
 				});
 
 				$('.textbox').hover(
