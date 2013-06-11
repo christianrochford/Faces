@@ -230,7 +230,7 @@ img{
 		font-style: normal;
 		text-decoration: none;
 		margin: 100px 30% 0;
-		@include breakpoint(klein) { margin: 50px 0 10%; }
+		@include breakpoint(klein) { margin: 50px 20% 0; }
 	}
 	p{
 		font-size: 1em;
@@ -240,7 +240,7 @@ img{
 		letter-spacing: 1px;
 		margin: 50px 30%;
 		padding-bottom: 27px;
-		@include breakpoint(klein) { margin: 50px 0 10%; }
+		@include breakpoint(klein) { margin: 50px 20% 0; }
 		border-bottom: 1px solid $white;
 	}
 }
@@ -255,7 +255,7 @@ img{
 	line-height: 2em;
 	position: absolute;
 	top: 0em;
-	right: 2em;
+	right: 1em;
 	color: #fff;
 	text-shadow: 0 -1px 1px rbga(0,0,0,.6);
 	cursor: pointer;
