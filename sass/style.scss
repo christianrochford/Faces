@@ -256,6 +256,7 @@ img{
 	position: absolute;
 	top: 0em;
 	right: 1em;
+	@include breakpoint(klein) { right: 0.5em; }
 	color: #fff;
 	text-shadow: 0 -1px 1px rbga(0,0,0,.6);
 	cursor: pointer;

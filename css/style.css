@@ -256,26 +256,32 @@ header h1 {
   text-shadow: 0 -1px 1px rbga(0, 0, 0, 0.6);
   cursor: pointer;
 }
+@media (max-width: 480px) {
+  /* line 252, ../sass/style.scss */
+  .reveal-modal .close-reveal-modal {
+    right: 0.5em;
+  }
+}
 
-/* line 266, ../sass/style.scss */
+/* line 267, ../sass/style.scss */
 footer {
   max-width: 940px;
   margin: 0 auto;
   height: 35px;
   background: black;
 }
-/* line 271, ../sass/style.scss */
+/* line 272, ../sass/style.scss */
 footer ul {
   list-style-type: none;
   margin: 0;
   padding: 5px 10px 0 0;
   float: right;
 }
-/* line 276, ../sass/style.scss */
+/* line 277, ../sass/style.scss */
 footer ul li {
   float: left;
 }
-/* line 279, ../sass/style.scss */
+/* line 280, ../sass/style.scss */
 footer ul a {
   display: block;
   width: 25px;
