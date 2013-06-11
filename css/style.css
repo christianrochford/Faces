@@ -58,26 +58,25 @@ body {
 
 /* line 102, ../sass/style.scss */
 h1 {
-  font-style: italic;
   text-transform: uppercase;
-  text-decoration: underline;
+  text-align: center;
 }
 
-/* line 107, ../sass/style.scss */
+/* line 106, ../sass/style.scss */
 p {
-  font-size: 1em;
+  font-size: 0.9em;
   line-height: 1.2em;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-/* line 116, ../sass/style.scss */
+/* line 115, ../sass/style.scss */
 header {
   background: black;
   height: 40px;
   padding: 0;
 }
-/* line 120, ../sass/style.scss */
+/* line 119, ../sass/style.scss */
 header h1 {
   color: white;
   font-size: 31px;
@@ -88,7 +87,7 @@ header h1 {
   margin: 0;
 }
 
-/* line 133, ../sass/style.scss */
+/* line 132, ../sass/style.scss */
 #container {
   max-width: 940px;
   min-width: 300px;
@@ -96,13 +95,13 @@ header h1 {
   overflow: hidden;
   line-height: 0;
 }
-/* line 139, ../sass/style.scss */
+/* line 138, ../sass/style.scss */
 #container img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 144, ../sass/style.scss */
+/* line 143, ../sass/style.scss */
 .item {
   width: 25%;
   float: left;
@@ -110,20 +109,20 @@ header h1 {
   line-height: 0;
 }
 @media (max-width: 480px) {
-  /* line 144, ../sass/style.scss */
+  /* line 143, ../sass/style.scss */
   .item {
     width: 50%;
   }
 }
 
 @media (max-width: 480px) {
-  /* line 151, ../sass/style.scss */
+  /* line 150, ../sass/style.scss */
   .item.empty2, .item.empty3 {
     display: none;
   }
 }
 
-/* line 155, ../sass/style.scss */
+/* line 154, ../sass/style.scss */
 .overbox {
   background: #ff3301;
   opacity: 0.8;
@@ -136,7 +135,7 @@ header h1 {
   left: 0;
 }
 
-/* line 169, ../sass/style.scss */
+/* line 168, ../sass/style.scss */
 .textbox {
   display: block;
   height: 100%;
@@ -148,39 +147,37 @@ header h1 {
   line-height: 1.2em;
 }
 @media (max-width: 900px) {
-  /* line 169, ../sass/style.scss */
+  /* line 168, ../sass/style.scss */
   .textbox {
     display: none;
   }
 }
 
-/* line 181, ../sass/style.scss */
-.textbox h1 {
-  margin: 16px 0;
-}
-
-/* line 185, ../sass/style.scss */
+/* line 180, ../sass/style.scss */
 .facetext {
-  width: 198%;
+  width: 200%;
   position: relative;
   display: none;
   box-sizing: border-box;
-  padding: 10px 20px 0;
+  background: rgba(0, 0, 0, 0.8);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
+  padding: 10px 15px 15px;
 }
 
-/* line 193, ../sass/style.scss */
-.left h1, .left p {
+/* line 191, ../sass/style.scss */
+.left .facetext {
   top: 0;
   left: 100%;
 }
 
-/* line 198, ../sass/style.scss */
-.right h1, .right p {
+/* line 196, ../sass/style.scss */
+.right .facetext {
   top: 0;
   right: 200%;
 }
 
-/* line 205, ../sass/style.scss */
+/* line 203, ../sass/style.scss */
 .reveal-modal-bg {
   position: fixed;
   height: 100%;
@@ -193,7 +190,7 @@ header h1 {
   left: 0;
 }
 
-/* line 217, ../sass/style.scss */
+/* line 215, ../sass/style.scss */
 .reveal-modal {
   color: white;
   font-family: "museo_sans_700regular",Helvetica,Arial,sans-serif;
@@ -205,7 +202,7 @@ header h1 {
   left: 0;
   z-index: 101;
 }
-/* line 227, ../sass/style.scss */
+/* line 225, ../sass/style.scss */
 .reveal-modal h1 {
   text-transform: uppercase;
   text-align: center;
@@ -214,12 +211,12 @@ header h1 {
   margin: 100px 30% 0;
 }
 @media (max-width: 480px) {
-  /* line 227, ../sass/style.scss */
+  /* line 225, ../sass/style.scss */
   .reveal-modal h1 {
     margin: 50px 20% 0;
   }
 }
-/* line 235, ../sass/style.scss */
+/* line 233, ../sass/style.scss */
 .reveal-modal p {
   font-size: 1em;
   line-height: 1.2em;
@@ -231,20 +228,20 @@ header h1 {
   border-bottom: 1px solid white;
 }
 @media (max-width: 480px) {
-  /* line 235, ../sass/style.scss */
+  /* line 233, ../sass/style.scss */
   .reveal-modal p {
     margin: 50px 20% 0;
   }
 }
 
-/* line 247, ../sass/style.scss */
+/* line 245, ../sass/style.scss */
 .overline {
   border: 2px solid #ff3300;
   margin: 15px auto;
   width: 60px;
 }
 
-/* line 252, ../sass/style.scss */
+/* line 250, ../sass/style.scss */
 .reveal-modal .close-reveal-modal {
   font-family: 'museo_sans_300regular';
   font-size: 60px;
@@ -257,31 +254,31 @@ header h1 {
   cursor: pointer;
 }
 @media (max-width: 480px) {
-  /* line 252, ../sass/style.scss */
+  /* line 250, ../sass/style.scss */
   .reveal-modal .close-reveal-modal {
     right: 0.5em;
   }
 }
 
-/* line 267, ../sass/style.scss */
+/* line 265, ../sass/style.scss */
 footer {
   max-width: 940px;
   margin: 0 auto;
   height: 35px;
   background: black;
 }
-/* line 272, ../sass/style.scss */
+/* line 270, ../sass/style.scss */
 footer ul {
   list-style-type: none;
   margin: 0;
   padding: 5px 10px 0 0;
   float: right;
 }
-/* line 277, ../sass/style.scss */
+/* line 275, ../sass/style.scss */
 footer ul li {
   float: left;
 }
-/* line 280, ../sass/style.scss */
+/* line 278, ../sass/style.scss */
 footer ul a {
   display: block;
   width: 25px;

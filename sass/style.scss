@@ -100,12 +100,11 @@ body{
 	font-family: "museo_sans_700regular",Helvetica,Arial,sans-serif;
 }
 h1{
-	font-style: italic;
 	text-transform: uppercase;
-	text-decoration: underline;
+	text-align: center;
 }
 p{
-	font-size: 1em;
+	font-size: 0.9em;
 	line-height: 1.2em;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -178,24 +177,23 @@ img{
   line-height: 1.2em;
 }
 
-.textbox h1 {
-  margin: 16px 0;
-}
-
 .facetext {
-  width: 198%;
+  width: 200%;
   position: relative;
   display: none;
   box-sizing: border-box;
-  padding: 10px 20px 0;
+  background: rgba(0,0,0,.8);
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"; //ie8
+  filter: alpha(opacity=80); //ie6, ie7
+  padding: 10px 15px 15px;
 }
 
-.left h1, .left p {
+.left .facetext {
   top: 0;
   left: 100%;
 }
 
-.right h1, .right p {
+.right .facetext {
   top: 0;
   right: 200%;
 }
