@@ -225,9 +225,8 @@ img{
 	left: 0;
 	z-index: 101;
 	h1{
-		font-style: italic;
 		text-transform: uppercase;
-		text-decoration: underline;
+		text-align: center;
 		margin: 100px 30% 0;
 		@include breakpoint(klein) { margin: 50px 0 10%; }
 	}
@@ -235,9 +234,12 @@ img{
 		font-size: 1em;
 		line-height: 1.2em;
 		text-transform: uppercase;
+		text-align: center;
 		letter-spacing: 1px;
 		margin: 50px 30%;
+		padding-bottom: 27px;
 		@include breakpoint(klein) { margin: 50px 0 10%; }
+		border-bottom: 1px solid $white;
 	}
 }
 	
