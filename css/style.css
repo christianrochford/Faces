@@ -186,7 +186,7 @@ header h1 {
   height: 100%;
   width: 100%;
   background: #000;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.9);
   z-index: 100;
   display: none;
   top: 0;
@@ -195,113 +195,87 @@ header h1 {
 
 /* line 217, ../sass/style.scss */
 .reveal-modal {
+  color: white;
+  font-family: "museo_sans_700regular",Helvetica,Arial,sans-serif;
+  text-align: left;
   visibility: hidden;
-  top: 100px;
-  left: 30%;
-  width: 40%;
+  width: 100%;
   position: absolute;
+  top: 0;
+  left: 0;
   z-index: 101;
-  padding: 30px 40px 34px;
+}
+/* line 227, ../sass/style.scss */
+.reveal-modal h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-style: normal;
+  text-decoration: none;
+  margin: 100px 30% 0;
 }
 @media (max-width: 480px) {
-  /* line 217, ../sass/style.scss */
-  .reveal-modal {
-    top: 50px;
+  /* line 227, ../sass/style.scss */
+  .reveal-modal h1 {
+    margin: 50px 0 10%;
   }
 }
-@media (max-width: 1024px) {
-  /* line 217, ../sass/style.scss */
-  .reveal-modal {
-    left: 15%;
-  }
-}
-@media (max-width: 685px) {
-  /* line 217, ../sass/style.scss */
-  .reveal-modal {
-    left: 10%;
-  }
-}
-@media (max-width: 480px) {
-  /* line 217, ../sass/style.scss */
-  .reveal-modal {
-    left: 0;
-  }
-}
-@media (max-width: 1024px) {
-  /* line 217, ../sass/style.scss */
-  .reveal-modal {
-    width: 60%;
-  }
-}
-@media (max-width: 685px) {
-  /* line 217, ../sass/style.scss */
-  .reveal-modal {
-    width: 70%;
-  }
+/* line 235, ../sass/style.scss */
+.reveal-modal p {
+  font-size: 1em;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+  margin: 50px 30%;
+  padding-bottom: 27px;
+  border-bottom: 1px solid white;
 }
 @media (max-width: 480px) {
-  /* line 217, ../sass/style.scss */
-  .reveal-modal {
-    width: 80%;
-  }
-}
-@media (max-width: 480px) {
-  /* line 217, ../sass/style.scss */
-  .reveal-modal {
-    padding: 10%;
+  /* line 235, ../sass/style.scss */
+  .reveal-modal p {
+    margin: 50px 0 10%;
   }
 }
 
-/* line 235, ../sass/style.scss */
+/* line 247, ../sass/style.scss */
+.overline {
+  border: 2px solid #ff3300;
+  margin: 15px auto;
+  width: 60px;
+}
+
+/* line 252, ../sass/style.scss */
 .reveal-modal .close-reveal-modal {
   font-family: 'museo_sans_300regular';
   font-size: 60px;
   line-height: 2em;
   position: absolute;
-  top: -2em;
-  left: 115%;
+  top: 0em;
+  right: 2em;
   color: #fff;
   text-shadow: 0 -1px 1px rbga(0, 0, 0, 0.6);
   cursor: pointer;
 }
-@media (max-width: 480px) {
-  /* line 235, ../sass/style.scss */
-  .reveal-modal .close-reveal-modal {
-    top: -1.5em;
-  }
-}
-@media (max-width: 685px) {
-  /* line 235, ../sass/style.scss */
-  .reveal-modal .close-reveal-modal {
-    left: 100%;
-  }
-}
-@media (max-width: 480px) {
-  /* line 235, ../sass/style.scss */
-  .reveal-modal .close-reveal-modal {
-    left: 90%;
-  }
-}
 
-/* line 252, ../sass/style.scss */
+/* line 266, ../sass/style.scss */
 footer {
   max-width: 940px;
   margin: 0 auto;
   height: 35px;
   background: black;
 }
-/* line 257, ../sass/style.scss */
+/* line 271, ../sass/style.scss */
 footer ul {
   list-style-type: none;
   margin: 0;
   padding: 5px 10px 0 0;
   float: right;
 }
-/* line 262, ../sass/style.scss */
+/* line 276, ../sass/style.scss */
 footer ul li {
   float: left;
 }
-/* line 265, ../sass/style.scss */
+/* line 279, ../sass/style.scss */
 footer ul a {
   display: block;
   width: 25px;

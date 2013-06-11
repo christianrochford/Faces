@@ -207,7 +207,7 @@ img{
 	height: 100%;
 	width: 100%;
 	background: #000;
-	background: rgba(0,0,0,.8);
+	background: rgba(0,0,0,.9);
 	z-index: 100;
 	display: none;
 	top: 0;
@@ -227,6 +227,8 @@ img{
 	h1{
 		text-transform: uppercase;
 		text-align: center;
+		font-style: normal;
+		text-decoration: none;
 		margin: 100px 30% 0;
 		@include breakpoint(klein) { margin: 50px 0 10%; }
 	}
@@ -242,7 +244,11 @@ img{
 		border-bottom: 1px solid $white;
 	}
 }
-	
+.overline {
+	border: 2px solid #ff3300;
+	margin: 15px auto;
+	width: 60px;
+	}
 .reveal-modal .close-reveal-modal {
     font-family: 'museo_sans_300regular';
 	font-size: 60px;
