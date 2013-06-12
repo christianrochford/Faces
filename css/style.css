@@ -227,8 +227,6 @@ header h1 {
   text-align: center;
   letter-spacing: 1px;
   margin: 50px 30%;
-  padding-bottom: 27px;
-  border-bottom: 1px solid white;
 }
 @media (max-width: 480px) {
   /* line 235, ../sass/style.scss */
@@ -237,14 +235,21 @@ header h1 {
   }
 }
 
-/* line 247, ../sass/style.scss */
+/* line 245, ../sass/style.scss */
 .overline {
   border: 2px solid #ff3300;
   margin: 15px auto;
   width: 60px;
 }
 
-/* line 252, ../sass/style.scss */
+/* line 250, ../sass/style.scss */
+.underline {
+  border: 1px solid #fff;
+  margin: 15px auto;
+  width: 60px;
+}
+
+/* line 255, ../sass/style.scss */
 .reveal-modal .close-reveal-modal {
   font-family: 'museo_sans_300regular';
   font-size: 60px;
@@ -257,31 +262,31 @@ header h1 {
   cursor: pointer;
 }
 @media (max-width: 480px) {
-  /* line 252, ../sass/style.scss */
+  /* line 255, ../sass/style.scss */
   .reveal-modal .close-reveal-modal {
     right: 0.5em;
   }
 }
 
-/* line 267, ../sass/style.scss */
+/* line 270, ../sass/style.scss */
 footer {
   max-width: 940px;
   margin: 0 auto;
   height: 35px;
   background: black;
 }
-/* line 272, ../sass/style.scss */
+/* line 275, ../sass/style.scss */
 footer ul {
   list-style-type: none;
   margin: 0;
   padding: 5px 10px 0 0;
   float: right;
 }
-/* line 277, ../sass/style.scss */
+/* line 280, ../sass/style.scss */
 footer ul li {
   float: left;
 }
-/* line 280, ../sass/style.scss */
+/* line 283, ../sass/style.scss */
 footer ul a {
   display: block;
   width: 25px;

@@ -239,13 +239,16 @@ img{
 		text-align: center;
 		letter-spacing: 1px;
 		margin: 50px 30%;
-		padding-bottom: 27px;
 		@include breakpoint(klein) { margin: 50px 20% 0; }
-		border-bottom: 1px solid $white;
 	}
 }
 .overline {
 	border: 2px solid #ff3300;
+	margin: 15px auto;
+	width: 60px;
+	}
+.underline {
+	border: 1px solid #fff;
 	margin: 15px auto;
 	width: 60px;
 	}
